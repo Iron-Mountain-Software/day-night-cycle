@@ -1,0 +1,21 @@
+{
+  "name": "com.spellboundar.lighting",
+  "version": "1.0.0",
+  "displayName": "Lighting",
+  "description": "Scripted lighting settings, including configurations for day/night cycles, fog, skyboxes, and light sources.",
+  "unity": "2019.1",
+  "keywords": [
+    "vfx"
+  ],
+  "author": "Chris Monteferrante <chris@spellboundar.com>",
+  "type": "tool",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpellBoundAR-Packages/lighting.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SpellBoundAR-Packages/lighting/issues"
+  },
+  "homepage": "https://github.com/SpellBoundAR-Packages/lighting#readme"
+}

@@ -1,0 +1,14 @@
+{
+    "name": "com.spellboundar.lighting",
+    "rootNamespace": "SpellBoundAR.Lighting",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
