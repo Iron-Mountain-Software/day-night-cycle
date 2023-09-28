@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SpellBoundAR.Lighting.Fog
+namespace IronMountain.DayNightCycle.Fog
 {
     [CreateAssetMenu(menuName = "Scriptable Objects/Gameplay/Lighting/Fog/Static Settings")]
     public class ScriptedFogSettingsStatic : ScriptedFogSettings

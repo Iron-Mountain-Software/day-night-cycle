@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SpellBoundAR.Lighting.Fog
+namespace IronMountain.DayNightCycle.Fog
 {
     [DisallowMultipleComponent]
     public class FogManager : MonoBehaviour
@@ -10,7 +10,7 @@ namespace SpellBoundAR.Lighting.Fog
         [SerializeField] private ScriptedFogSettings scriptedFogSettings;
 
         [Header("Cache")]
-        private ScriptedFogSettings _initialScriptedFogSettings;
+        private ScriptedFogSettings _initialSettings;
         private IFogSettings _defaultSettings;
 
         public ScriptedFogSettings ScriptedFogSettings
@@ -34,7 +34,7 @@ namespace SpellBoundAR.Lighting.Fog
         {
             if (Instance != this && Instance != null) Destroy(gameObject);
             else Instance = this;
-            _initialScriptedFogSettings = scriptedFogSettings;
+            _initialSettings = scriptedFogSettings;
         }
 
         private void OnDestroy()
@@ -45,7 +45,7 @@ namespace SpellBoundAR.Lighting.Fog
 
         public void ResetToInitialState()
         {
-            ScriptedFogSettings = _initialScriptedFogSettings;
+            ScriptedFogSettings = _initialSettings;
         }
 
         private void Update()

@@ -1,21 +1,21 @@
 {
-  "name": "com.spellboundar.lighting",
+  "name": "com.iron-mountain.day-night-cycle",
   "version": "1.0.0",
-  "displayName": "Lighting",
+  "displayName": "Day/Night Cycle",
   "description": "Scripted lighting settings, including configurations for day/night cycles, fog, skyboxes, and light sources.",
   "unity": "2019.1",
   "keywords": [
     "vfx"
   ],
-  "author": "Chris Monteferrante <chris@spellboundar.com>",
+  "author": "Chris Monteferrante <ludachrismonte@gmail.com>",
   "type": "tool",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SpellBoundAR-Packages/lighting.git"
+    "url": "git+https://github.com/Iron-Mountain/lighting.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SpellBoundAR-Packages/lighting/issues"
+    "url": "https://github.com/Iron-Mountain/lighting/issues"
   },
-  "homepage": "https://github.com/SpellBoundAR-Packages/lighting#readme"
+  "homepage": "https://github.com/Iron-Mountain/lighting#readme"
 }

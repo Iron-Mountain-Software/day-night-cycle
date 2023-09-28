@@ -1,6 +1,6 @@
 {
-    "name": "com.spellboundar.lighting",
-    "rootNamespace": "SpellBoundAR.Lighting",
+    "name": "com.iron-mountain.day-night-cycle",
+    "rootNamespace": "IronMountain.DayNightCycle",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

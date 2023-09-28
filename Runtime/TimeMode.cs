@@ -1,4 +1,4 @@
-namespace SpellBoundAR.Lighting
+namespace IronMountain.DayNightCycle
 {
     public enum TimeMode
     {

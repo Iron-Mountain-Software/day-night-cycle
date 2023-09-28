@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SpellBoundAR.Lighting.Fog
+namespace IronMountain.DayNightCycle.Fog
 {
     public class FogSettings : IFogSettings
     {

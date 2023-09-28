@@ -1,17 +1,17 @@
-using SpellBoundAR.Lighting.Fog;
+using IronMountain.DayNightCycle.Fog;
 using UnityEditor;
 
-namespace SpellBoundAR.Lighting.Editor
+namespace IronMountain.DayNightCycle.Editor.Fog
 {
-    [CustomEditor(typeof(ScriptedFogSettingsDynamic))]
-    public class ScriptedFogSettingsDynamicInspector : UnityEditor.Editor
+    [CustomEditor(typeof(ScriptedFogSettingsStatic))]
+    public class ScriptedFogSettingsStaticInspector : UnityEditor.Editor
     {
         public override void OnInspectorGUI()
         {
             EditorGUILayout.PropertyField(serializedObject.FindProperty("enabled"));
             if (serializedObject.FindProperty("enabled").boolValue)
             {
-                EditorGUILayout.PropertyField(serializedObject.FindProperty("gradient"));
+                EditorGUILayout.PropertyField(serializedObject.FindProperty("color"));
                 EditorGUILayout.PropertyField(serializedObject.FindProperty("mode"));
                 if (serializedObject.FindProperty("mode").enumValueIndex == 0)
                 {

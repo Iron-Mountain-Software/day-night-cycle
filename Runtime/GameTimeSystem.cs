@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace SpellBoundAR.Lighting
+namespace IronMountain.DayNightCycle
 {
     public static class GameTimeSystem
     {

@@ -1,6 +1,6 @@
 {
-    "name": "com.spellboundar.lighting.Editor",
-    "rootNamespace": "SpellBoundAR.Lighting",
+    "name": "com.iron-mountain.day-night-cycle.Editor",
+    "rootNamespace": "IronMountain.DayNightCycle",
     "references": [
         "GUID:08c3e42ce8bfe4b6ca432465e89f4b7e"
     ],
