@@ -1,6 +1,6 @@
 {
   "name": "com.iron-mountain.day-night-cycle",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "displayName": "Day/Night Cycle",
   "description": "Scripted lighting settings, including configurations for day/night cycles, fog, skyboxes, and light sources.",
   "unity": "2019.1",

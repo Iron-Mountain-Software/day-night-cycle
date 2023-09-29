@@ -6,9 +6,9 @@ namespace IronMountain.DayNightCycle.AmbientLighting
     public class ScriptedAmbientLightingSettingsDynamic : ScriptedAmbientLightingSettings
     {
         [SerializeField] private AnimationCurve intensity;
-        [SerializeField] private Gradient skyColor;
-        [SerializeField] private Gradient equatorColor;
-        [SerializeField] private Gradient groundColor;
+        [SerializeField] [GradientUsage(true)] private Gradient skyColor;
+        [SerializeField] [GradientUsage(true)] private Gradient equatorColor;
+        [SerializeField] [GradientUsage(true)] private Gradient groundColor;
 
         public override float Intensity => intensity.Evaluate(GameTimeSystem.DayProgressPercent);
         public override Color SkyColor => skyColor.Evaluate(GameTimeSystem.DayProgressPercent);
