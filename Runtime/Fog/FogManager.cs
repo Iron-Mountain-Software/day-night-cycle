@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace IronMountain.DayNightCycle.Fog
 {
+    [ExecuteAlways]
     [DisallowMultipleComponent]
     public class FogManager : MonoBehaviour
     {
