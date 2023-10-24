@@ -1,21 +1,41 @@
 {
   "name": "com.iron-mountain.day-night-cycle",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "displayName": "Day/Night Cycle",
-  "description": "Scripted lighting settings, including configurations for day/night cycles, fog, skyboxes, and light sources.",
+  "author": "Chris Monteferrante <ludachrismonte@gmail.com>",
   "unity": "2019.1",
+  "type": "tool",
+  "license": "MIT",
+  "homepage": "https://github.com/Iron-Mountain-Software/day-night-cycle#readme",
+  "bugs": {
+    "type": "git",
+    "url": "https://github.com/Iron-Mountain-Software/day-night-cycle/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iron-Mountain-Software/day-night-cycle.git"
+  },
+  "description": "Scripted lighting settings, including configurations for day/night cycles, fog, skyboxes, and light sources.",
+  "useCases": [
+    "Managing ambient lighting, directional light directions, fog, and skybox at different times of the day."
+  ],
+  "directions": null,
   "keywords": [
     "vfx"
   ],
-  "author": "Chris Monteferrante <ludachrismonte@gmail.com>",
-  "type": "tool",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Iron-Mountain/lighting.git"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Iron-Mountain/lighting/issues"
-  },
-  "homepage": "https://github.com/Iron-Mountain/lighting#readme"
+  "sources": [
+    {
+      "type": "itch.io",
+      "url": "https://iron-mountain.itch.io/day-night-cycle"
+    },
+    {
+      "type": "npm",
+      "url": "https://www.npmjs.com/package/com.iron-mountain.day-night-cycle"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/Iron-Mountain-Software/day-night-cycle"
+    }
+  ],
+  "dependencies": {}
 }
