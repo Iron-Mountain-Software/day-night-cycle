@@ -16,11 +16,18 @@ namespace IronMountain.DayNightCycle.Editor.GradientSkybox
 
         public override void OnInspectorGUI()
         {
-            base.OnInspectorGUI();
+            EditorGUI.BeginDisabledGroup(true);
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("m_Script"));
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("shader"));
+            EditorGUI.EndDisabledGroup();
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("scriptedSettings"));
+            serializedObject.ApplyModifiedProperties();
             if (_gradientSkyboxManager && _gradientSkyboxManager.ScriptedSettings)
             {
                 CreateCachedEditor(_gradientSkyboxManager.ScriptedSettings, null, ref _gradientSkyboxSettingsInspector);
+                EditorGUI.indentLevel++;
                 _gradientSkyboxSettingsInspector.OnInspectorGUI();
+                EditorGUI.indentLevel--;
             }
             else _gradientSkyboxSettingsInspector = null;
         }

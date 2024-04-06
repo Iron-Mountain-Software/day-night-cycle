@@ -1,7 +1,5 @@
-using System;
 using IronMountain.DayNightCycle.AmbientLighting;
 using UnityEditor;
-using UnityEngine;
 
 namespace IronMountain.DayNightCycle.Editor.AmbientLighting
 {
@@ -22,7 +20,9 @@ namespace IronMountain.DayNightCycle.Editor.AmbientLighting
             if (_ambientLightingManager && _ambientLightingManager.ScriptedSettings)
             {
                 CreateCachedEditor(_ambientLightingManager.ScriptedSettings, null, ref _ambientLightingSettingsInspector);
+                EditorGUI.indentLevel++;
                 _ambientLightingSettingsInspector.OnInspectorGUI();
+                EditorGUI.indentLevel--;
             }
             else _ambientLightingSettingsInspector = null;
         }

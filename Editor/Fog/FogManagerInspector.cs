@@ -20,7 +20,9 @@ namespace IronMountain.DayNightCycle.Editor.Fog
             if (_fogManager && _fogManager.ScriptedFogSettings)
             {
                 CreateCachedEditor(_fogManager.ScriptedFogSettings, null, ref _fogSettingsInspector);
+                EditorGUI.indentLevel++;
                 _fogSettingsInspector.OnInspectorGUI();
+                EditorGUI.indentLevel--;
             }
             else _fogSettingsInspector = null;
         }

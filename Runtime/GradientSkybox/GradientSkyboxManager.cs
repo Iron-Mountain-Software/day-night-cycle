@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace IronMountain.DayNightCycle.GradientSkybox
@@ -12,9 +13,11 @@ namespace IronMountain.DayNightCycle.GradientSkybox
         
         public static GradientSkyboxManager Instance { get; private set; }
 
+        [SerializeField] private Shader shader;
         [SerializeField] private ScriptedGradientSkyboxSettings scriptedSettings;
 
         [Header("Cache")]
+        private Material _material;
         private ScriptedGradientSkyboxSettings _initialSettings;
         private IGradientSkyboxSettings _defaultSettings;
 
@@ -34,9 +37,15 @@ namespace IronMountain.DayNightCycle.GradientSkybox
                 return _defaultSettings;
             }
         }
-        
+
+        private void OnValidate()
+        {
+            if (!shader) shader = Shader.Find("Skybox/Gradient Skybox");
+        }
+
         private void Awake()
         {
+            OnValidate();
             if (Instance != this && Instance != null) Destroy(gameObject);
             else Instance = this;
             _initialSettings = scriptedSettings;
@@ -52,10 +61,15 @@ namespace IronMountain.DayNightCycle.GradientSkybox
         {
             ScriptedSettings = _initialSettings;
         }
+        
+        public void OnEnable() => RefreshSkybox();
+        public void Update() => RefreshSkybox();
 
-        private void Update()
+        private void RefreshSkybox()
         {
-            if (!RenderSettings.skybox) return;
+            if (!_material && shader) _material = new Material(shader);
+            if (!_material) return;
+            RenderSettings.skybox = _material;
             RenderSettings.skybox.SetColor(TopColor, Settings.TopColor);
             RenderSettings.skybox.SetColor(MiddleColor, Settings.MiddleColor);
             RenderSettings.skybox.SetColor(BottomColor, Settings.BottomColor);
