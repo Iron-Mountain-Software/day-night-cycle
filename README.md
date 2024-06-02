@@ -1,12 +1,13 @@
 # Day/Night Cycle
-Version: 1.0.3
+*Version: 1.0.5*
+## Description: 
 Scripted lighting settings, including configurations for day/night cycles, fog, skyboxes, and light sources.
-
-## Use Cases:
+## Use Cases: 
 * Managing ambient lighting, directional light directions, fog, and skybox at different times of the day.
-## Package Mirrors:
+## Package Mirrors: 
 [<img src='https://img.itch.zone/aW1nLzEzNzQ2ODk4LnBuZw==/original/Rv4m96.png'>](https://iron-mountain.itch.io/day-night-cycle)[<img src='https://img.itch.zone/aW1nLzEzNzQ2ODkyLnBuZw==/original/Fq0ORM.png'>](https://www.npmjs.com/package/com.iron-mountain.day-night-cycle)[<img src='https://img.itch.zone/aW1nLzEzNzQ2ODg3LnBuZw==/original/npRUfq.png'>](https://github.com/Iron-Mountain-Software/day-night-cycle)
-## Key Scripts & Components:
+---
+## Key Scripts & Components: 
 1. public class **DynamicLightColor** : MonoBehaviour
 1. public static class **GameTimeSystem**
 1. public class **GameTimeSystemDebugger** : MonoBehaviour
@@ -101,6 +102,8 @@ Scripted lighting settings, including configurations for day/night cycles, fog, 
       * public IGradientSkyboxSettings ***Settings***  { get; }
    * Methods: 
       * public void ***ResetToInitialState***()
+      * public void ***OnEnable***()
+      * public void ***Update***()
 1. public class **GradientSkyboxSettings**
    * Properties: 
       * public float ***Intensity***  { get; }

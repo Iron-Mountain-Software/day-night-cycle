@@ -1,6 +1,6 @@
 {
   "name": "com.iron-mountain.day-night-cycle",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "displayName": "Day/Night Cycle",
   "author": "Chris Monteferrante <ludachrismonte@gmail.com>",
   "unity": "2019.1",
@@ -19,7 +19,7 @@
   "useCases": [
     "Managing ambient lighting, directional light directions, fog, and skybox at different times of the day."
   ],
-  "directions": null,
+  "instructions": [],
   "keywords": [
     "vfx"
   ],
